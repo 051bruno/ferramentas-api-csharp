@@ -15,7 +15,7 @@ public static class FerramentaFactory
     {
         return tipo switch
         {
-            TipoFerramenta.VBit => new VBit(endereco, descricao, diametro, altura),
+            TipoFerramenta.VBit => new FerramentaVBit(endereco, descricao, diametro, altura),
             TipoFerramenta.TopoRaso => new FerramentaTopoRaso(endereco, descricao, diametro, altura),
             _ => throw new ArgumentException("Tipo de ferramenta inválido.")
         };
