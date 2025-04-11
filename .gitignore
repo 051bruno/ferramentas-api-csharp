@@ -1,0 +1,25 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.dbmdl
+*.bak
+*.log
+
+# Others
+*.swp
+*.tmp
+*.temp
+*.DS_Store
