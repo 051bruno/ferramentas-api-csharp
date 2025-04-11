@@ -2,9 +2,9 @@
 
 namespace FerramentasDomain.Entities;
 
-public class VBit : Ferramenta
+public class FerramentaVBit : FerramentaBase
 {
-    public VBit(Endereco endereco, Descricao descricao, Diametro diametro, Altura altura)
+    public FerramentaVBit(Endereco endereco, Descricao descricao, Diametro diametro, Altura altura)
         : base(endereco, descricao, diametro, altura)
     {
     }

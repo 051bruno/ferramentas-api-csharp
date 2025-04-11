@@ -2,7 +2,7 @@
 
 namespace FerramentasDomain.Entities;
 
-public abstract class Ferramenta
+public abstract class FerramentaBase
 {
     public Guid Id { get; private set; } = Guid.NewGuid();
     public Endereco Endereco { get; private set; }
@@ -10,7 +10,7 @@ public abstract class Ferramenta
     public Diametro Diametro { get; private set; }
     public Altura Altura { get; private set; }
 
-    protected Ferramenta(Endereco endereco, Descricao descricao, Diametro diametro, Altura altura)
+    protected FerramentaBase(Endereco endereco, Descricao descricao, Diametro diametro, Altura altura)
     {
         Endereco = endereco;
         Descricao = descricao;
@@ -18,5 +18,5 @@ public abstract class Ferramenta
         Altura = altura;
     }
 
-    public abstract string Path(); // Polimorfismo aqui
+    public abstract string Path();
 }

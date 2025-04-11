@@ -2,9 +2,9 @@
 
 namespace FerramentasDomain.Entities;
 
-public class TopoRaso : Ferramenta
+public class FerramentaTopoRaso : FerramentaBase
 {
-    public TopoRaso(Endereco endereco, Descricao descricao, Diametro diametro, Altura altura)
+    public FerramentaTopoRaso(Endereco endereco, Descricao descricao, Diametro diametro, Altura altura)
         : base(endereco, descricao, diametro, altura)
     {
     }
