@@ -18,5 +18,10 @@ public abstract class FerramentaBase
         Altura = altura;
     }
 
+    public void SetId(Guid id)
+    {
+        Id = id;
+    }
+
     public abstract string Path();
 }
